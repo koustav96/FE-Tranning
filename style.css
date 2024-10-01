@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #d1e3e3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  width: 1300px;
+  margin: auto;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-left li {
+  margin-right: 40px;
+}
+
+.nav-left li:last-child {
+  margin-right: 0;
+}
+
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #666;
+}
+
+.nav-left a:hover {
+  color: #ffa500;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #038982;
+  color: #fff;
+}
+
+#hamburger {
+  display: none;
+}
+
+#myLinks {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.business-consultant {
+  position: relative;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin: auto;
+}
+
+.left-section {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.business-consultant-label {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin-right: 20px;
+}
+
+.label {
+  color: #008080;
+  font-weight: bold;
+}
+
+.text-section h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  transform: scaleY(1.2);
+  margin: 25px 0;
+}
+
+.text-section p {
+  color: #666;
+  line-height: 1.6;
+  padding: 25px 0;
+}
+
+.text-section a {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #005f5b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.industry-list {
+  margin: 30px 0;
+  width: 400px;
+}
+
+.industry-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.industry-list li {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 10px;
+}
+
+.industry-list li::before {
+  content: '•';
+  color: #ffa500;
+  margin-right: 15px;
+}
+
+.industry-list li:nth-child(1)::before,
+.industry-list li:nth-child(4)::before {
+  content: none;
+}
+
+.right-section img {
+  height: 580px;
+}
+
+.foot {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 24px;
+  width: 1000px;
+  margin: auto;
+}
+
+.stat-card h2 {
+  transform: scaleY(1.5);
+  margin: 15px 0;
+}
+
+.stat-card {
+  padding: 20px;
+  width: 23%;
+  background-color: #fff;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #666666;
+  margin: 15px 0;
+}
+
+.underline {
+  height: 3px;
+  background-color: #f4b300; 
+  width: 80%
+  margin: 10px auto 0;
+}
+
+.stat-card:hover {
+  background-color: #005f5b;
+  cursor: pointer;
+}
+
+.stat-card:hover h2 {
+  color: #ffcc00;
+}
+
+.stat-card:hover p {
+  color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    width: 750px;
+  }
+
+  .business-consultant {
+    padding: 6px 0px;
+    display: flex;
+    width: 750px;
+  }
+
+  .text-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin: 6px 0;
+  }
+
+  .business-consultant-label {
+    margin-bottom: 20px;
+  }
+
+  .left-section {
+    width: 50%;
+    margin-left: 16px;
+  }
+
+  .right-section {
+    width: 50%;
+  }
+
+  .right-section img {
+    height: 400px;
+  }
+
+  .stats-section {
+    width: 700px;
+  }
+  .stat-card h2 {
+    font-size: 18px;
+  }
+
+  .stat-card {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #myLinks a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #hamburger:hover {
+    cursor: pointer;
+    background-color: #9894e0;
+  }
+
+  .nav-left, .nav-right {
+    display: none;
+  }
+
+  .industry-list {
+    width: 100%;
+  }
+
+  .right-section img {
+    height: 300px;
+  }
+
+  .text-section h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin: 6px 0;
+  }
+
+  .business-consultant {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-section {
+    width: 95%;
+    margin: 0 10px;
+    padding-top: 0px;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .stat-card {
+    padding: 30px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .stat-card h2 {
+    transform: scaleY(1.9);
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 26px;
+  }
+
+  .stat-card p {
+    font-size: 18px;
+    color: #666666;
+    margin: 18px 0;
+  }
+}

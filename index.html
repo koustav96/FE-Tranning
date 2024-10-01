@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aexpert Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <ul class="nav-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <a href="#" class="logo">
+          <img src="/Images/Aexpert.svg" alt="Aexpert Logo">
+        </a>
+
+        <ul class="nav-right">
+          <li><a href="#" class="btn">Sign in</a></li>
+          <li><a href="#" class="btn">Sign up</a></li>
+        </ul>
+        <a href="javascript:void(0);" id="hamburger" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+       
+      </nav>
+    </header>
+
+    <section class="business-consultant">
+      <div id="myLinks">
+        <a href="#">Home</a>
+        <a href="#">How it Works</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Sign up</a>
+        <a href="#">Sign In</a>
+      </div>
+
+      <div class="left-section">
+
+        <div class="text-section">
+
+          <div class="business-consultant-label">
+            <span class="line"></span>
+            <span class="label">Business Consultant</span>
+          </div>
+
+          <h1>Find the Solution With the Expert</h1>
+
+          <p>
+            We have helped companies overcome challenges and increase revenue or grow. From accounting, to human
+            resource
+            to technical support, we will make it easier, so that you don’t need to figure out all on your own.
+          </p>
+
+          <a href="#">Get Started</a>
+        </div>
+
+        <div class="industry-list">
+          <ul>
+            <li>Industries</li>
+            <li>Chemicals</li>
+            <li>Agriculture</li>
+            <li>Engineering</li>
+            <li>Automotive</li>
+            <li>Healthcare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="/Images/banner-img.png">
+      </div>
+    </section>
+    <section class="foot">
+      <div class="stats-section">
+        <div class="stat-card">
+          <h2><span>700+</span> EMPLOYEES</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="underline"></div>
+        </div>
+        <div class="stat-card">
+          <h2><span>10+</span> EMPLOYEES</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="underline"></div>
+        </div>
+        <div class="stat-card">
+          <h2><span>120+</span> LOCATIONS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="underline"></div>
+        </div>
+        <div class="stat-card">
+          <h2><span>100%</span> SATISFACTION</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
