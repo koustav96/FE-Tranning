@@ -22,20 +22,19 @@ header {
   background-color: #EDEDED;
 }
 
-.container1 {
+.container {
   padding: 20px 10px;
   width: 1300px;
   margin: auto;
 }
 
-.navbar {
+.flex-all {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-left, .nav-right {
-  display: flex;
   list-style-type: none;
 }
 
@@ -83,22 +82,8 @@ header {
   background-color: #EDEDED;
 }
 
-.container2 {
-  padding: 20px 10px;
-  width: 1300px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 .left-section {
-  width: 40%;
-  padding-top: 40px;
-}
-
-.business-consultant-label {
-  display: flex;
-  align-items: center;
+  width: 50%;
 }
 
 .label {
@@ -117,13 +102,10 @@ header {
 }
 
 .text-section h1 {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 84px;
   color: #333;
-  transform: scaleY(1.3);
   font-weight: 500;
   font-family: Bebas_Neue, sans-serif;
-  letter-spacing: 4px;
   padding-top: 20px;
 }
 
@@ -131,21 +113,16 @@ header {
   color: #666;
   line-height: 1.6;
   padding: 25px 0;
-  margin-bottom: 20px;
-
+  font-size: 18px;
 }
 
 .text-section a {
+  display: inline-block;
   padding: 12px 20px;
   border-radius: 30px;
   background-color: #005f5b;
   color: #ffffff;
   text-decoration: none;
-}
-
-.industry-list {
-  margin: 30px 0;
-  width: 400px;
 }
 
 .industry-list ul {
@@ -155,9 +132,10 @@ header {
 }
 
 .industry-list li {
+  padding: 10px 0;
   font-size: 16px;
+  width: 33.33%;
   color: #666;
-  margin: 10px 10px;
 }
 
 .industry-list li::before {
@@ -171,36 +149,29 @@ header {
   content: none;
 }
 
+.right-section {
+  width: 40%;
+}
+
+
 .right-section img {
-  height: 580px;
+  width: 100%;
 }
 
 .foot {
   background-color: #ffffff;
 }
 
-.container3 {
-  width: 1300px;
-}
-
 .stats-section {
-  display: flex;
-  justify-content: space-between;
   position: relative;
   bottom: 60px;
-  width: 1000px;
+  width: 80%;
   margin: auto;
-}
-
-.stat-card h2 {
-  transform: scaleY(1.5);
-  margin: 15px 0;
-  margin-bottom: 30px;
 }
 
 .stat-card {
   padding: 20px;
-  width: 23%;
+  width: 22%;
   background-color: #fff;
   box-shadow: 0 0 10px 1px #b0b0b0;
 }
@@ -208,14 +179,13 @@ header {
 .stat-card p {
   font-size: 14px;
   color: #666666;
-  margin: 15px 0;
+  padding: 14px 0;
 }
 
 .underline {
   height: 3px;
   background-color: #f4b300; 
   width: 100%;
-  margin: 10px auto 0;
 }
 
 .stat-card:hover {
@@ -231,42 +201,29 @@ header {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 1200px) {
-  .container1 {
-    width: 750px;
-  }
-
-  .container2 {
-    padding: 6px 0px;
-    display: flex;
-    width: 750px;
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 850px;
   }
 
   .text-section h1 {
     font-size: 40px;
-    margin-bottom: 10px;
-    margin: 6px 0;
   }
 
-  .business-consultant-label {
-    margin-bottom: 20px;
-  }
+  .text-section p {
+    font-size: 14px;
+    padding: 10px 0;
+   }
 
-  .left-section {
-    padding-top: 8px;
-  }
-
-  .right-section img {
-    height: 550px;
-  }
-
-  .container3 {
-    width: 750px;
+  .industry-list li {
+    padding: 10px 0;
+    font-size: 16px;
+    width: 33.33%;
+    color: #666;
   }
 
   .stats-section {
-    width: 650px;
-    bottom: 20px;
+    bottom: 40px;
   }
   .stat-card h2 {
     font-size: 18px;
@@ -277,10 +234,20 @@ header {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 750px;
+  }
+
+  .stat-card {
+    padding: 8px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
-  .container1 {
+  .container {
     width: 650px;
-    padding-bottom: 14px;
+    padding: 10px 0  0px;
   }
 
   .nav-left li {
@@ -292,28 +259,9 @@ header {
     font-size: 14px;
   }
 
-  .left-section {
-    padding-top: 0;
-  }
-
-  .container2 {
-    width: 650px;
-    padding: 0;
-  }
-
   .text-section h1 {
-    font-size: 30px;
-  }
-
-  .text-section p {
-    line-height: 1.4;
-    padding-top: 10px;
-    padding-bottom: 0px;
-  }
-
-  .industry-list {
-    margin: 24px 0;
-    width: 360px;
+    font-size: 36px;
+    padding-top: 8px;
   }
 
   .business-consultant .label::before {
@@ -322,17 +270,22 @@ header {
     margin-right: 14px;
   }
 
+  .text-section p {
+    padding-top: 0;
+  }
+
   .text-section a {
-    padding: 6px 8px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
     font-size: 14px;
   }
 
-  .right-section img {
-    height: 420px;
+  .industry-list li {
+    padding: 4px 0;
   }
 
-  .stats-section {
-    width: 550px;
+  .right-section {
+    width: 50%;
   }
 
   .stat-card h2 {
@@ -343,11 +296,10 @@ header {
   .stat-card p {
     font-size: 12px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
-  .container1 {
+  .container {
     width: 600px;
   }
 
@@ -360,27 +312,16 @@ header {
     font-size: 12px;
   }
 
-  .container2 {
-    width: 600px;
-  }
-
   .text-section h1 {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   .text-section p {
     font-size: 14px;    
   }
 
-  .industry-list {
-    margin: 24px 0;
-    width: 320px;
-  }
-
   .industry-list li {
     font-size: 14px;
-    color: #666;
-    margin: 8px 8px;
   }
 
   .text-section a {
@@ -388,24 +329,17 @@ header {
     font-size: 12px;
   }
 
-  .right-section img {
-    height: 370px;
-    width: 300px;
-  }
-
   .stats-section {
-    width: 510px;
+    bottom: 26px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .container1 {
+  .container {
     width: 380px;
-    background-color: #EDEDED;
   }
-
+  
   .navbar {
-    width: 100%;
     justify-content: center;
   }
 
@@ -431,56 +365,20 @@ header {
     display: none;
   }
 
-  .industry-list {
-    width: 350px;
-  }
-
-  .right-section img {
-    position: relative;
-    left: 40px;
-    height: 300px;
-  }
-
   .text-section h1 {
     font-size: 50px;
-    margin-bottom: 10px;
-    margin: 6px 0;
   }
 
-  .container2 {
-    width: 380px;
-    flex-direction: column;
-    background-color: #EDEDED;
-  }
-
-  .left-section {
-    width: 95%;
-    margin-left: 10px;
-    padding-top: 0px;
-  }
-
-  .right-section {
-    width: 95%;
-  }
-
-  .stats-section {
-    flex-direction: column;
-    width: 90%;
-    bottom: 0;
-    margin: auto;
+  .left-section, .right-section  {
+    width: 100%;
   }
 
   .stat-card {
-    padding: 30px;
-    width: 90%;
-    position: relative;
-    left: 20px;
+    width: 100%;
   }
 
   .stat-card h2 {
-    transform: scaleY(1.9);
-    display: inline-block;
-    margin: 15px 0;
+    margin: 14px 0;
     font-size: 26px;
   }
 
