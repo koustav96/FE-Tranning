@@ -10,10 +10,11 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <nav class="navbar">
-        <ul class="nav-left">
+  <header>
+    <div class="container">
+      <nav class="navbar flex-all">
+
+        <ul class="nav-left flex-all">
           <li><a href="#">Home</a></li>
           <li><a href="#">How it works</a></li>
           <li><a href="#">Blog</a></li>
@@ -24,18 +25,20 @@
           <img src="./Images/Aexpert.svg" alt="Aexpert Logo">
         </a>
 
-        <ul class="nav-right">
+        <ul class="nav-right flex-all">
           <li><a href="#" class="btn">Sign in</a></li>
           <li><a href="#" class="btn">Sign up</a></li>
         </ul>
         <a href="javascript:void(0);" id="hamburger" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-       
-      </nav>
-    </header>
 
-    <section class="business-consultant">
+      </nav>
+    </div>
+  </header>
+
+  <section class="business-consultant">
+    <div class="container flex-all">
       <div id="myLinks">
         <a href="#">Home</a>
         <a href="#">How it Works</a>
@@ -49,20 +52,21 @@
 
         <div class="text-section">
 
-          <div class="business-consultant-label">
-            <span class="line"></span>
+          <div class="flex-all">
             <span class="label">Business Consultant</span>
           </div>
 
-          <h1>Find the Solution With the Expert</h1>
+          <h1>FIND THE SOLUTIONS WITH THE EXPERT</h1>
 
           <p>
             We have helped companies overcome challenges and increase revenue or grow. From accounting, to human
             resource
             to technical support, we will make it easier, so that you don’t need to figure out all on your own.
           </p>
+          <div class="button">
 
-          <a href="#">Get Started</a>
+            <a href="#">Get Started</a>
+          </div>
         </div>
 
         <div class="industry-list">
@@ -79,44 +83,36 @@
       <div class="right-section">
         <img src="./Images/banner-img.png">
       </div>
-    </section>
-    <section class="foot">
-      <div class="stats-section">
+    </div>
+  </section>
+
+  <section class="foot">
+    <div class="container">
+      <div class="stats-section flex-all">
         <div class="stat-card">
           <h2><span>700+</span> EMPLOYEES</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p>Lorem ipsum dolor sit amet, consecter adipiscing elit</p>
           <div class="underline"></div>
         </div>
         <div class="stat-card">
-          <h2><span>10+</span> EMPLOYEES</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2><span>100+</span> EMPLOYEES</h2>
+          <p>Lorem ipsum dolor sit amet, conctetur adipiscing elit</p>
           <div class="underline"></div>
         </div>
         <div class="stat-card">
-          <h2><span>120+</span> LOCATIONS</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2><span>700+</span> EMPLOYEES</h2>
+          <p>Lorem ipsum dolor sit amet, consecter adipiscing elit</p>
           <div class="underline"></div>
         </div>
         <div class="stat-card">
           <h2><span>100%</span> SATISFACTION</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p>Lorem ipsum dolor sit amet, consetur adipiscing elit</p>
           <div class="underline"></div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
-
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 
 </html>
